@@ -1,10 +1,11 @@
 function sum (array) {
-  // your code here
+  return array.reduce((a,b)=>{
+    return a+b;
+  })
 };
 
 function productAll (array) {
-  // your code here
-};
+}
 
 function objectify (array) {
   // your code here

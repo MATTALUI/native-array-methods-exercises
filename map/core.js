@@ -1,17 +1,24 @@
 function multiplyBy10 (array) {
- // your code here
+ return array.map(number=>number*10);
 };
 
 function shiftRight (array) {
- // your code here
+ return array.map((item, index)=>{
+   if(index === 0)return array[array.length-1];
+   return array[index-1];
+ });
 };
 
 function onlyVowels (array) {
- // your code here
+ return array.map((word)=>{
+   return word.split('').filter(letter=>letter.match(/[aeiou]/ig)).join('');
+ });
 };
 
 function doubleMatrix (array) {
- // your code here
+  return array.map((internalArray)=>{
+    return internalArray.map(number=>number*2);
+  });
 };
 
 module.exports = {
